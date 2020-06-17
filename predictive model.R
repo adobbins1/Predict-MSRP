@@ -24,7 +24,7 @@ y <- train.data$MSRP
 
 glmnet(x, y, alpha = 1, lambda = NULL)
 
-# Find the best lambda using cross-validation
+
 #ridge
 set.seed(123)
 cv <- cv.glmnet(x, y, alpha = 0)
